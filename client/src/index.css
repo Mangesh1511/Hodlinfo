@@ -9,7 +9,11 @@ body {
   background-color: #191d28;
 
 }
-
+.light-mode
+{
+  background-color: aliceblue;
+  color:black;
+}
 .app
 {
 margin:1rem;
@@ -23,6 +27,8 @@ p{
 .navbar
 {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: top;
   color:#17a2b8;
   /* background-color: #191d28; */
@@ -33,7 +39,7 @@ p{
   color:white;
   text-decoration: none;
   border:solid 1px #17a2b8;
-  padding:0.5rem;
+  padding:0.3rem;
   border-radius: 15px;
   background-color: #17a2b8;
 
@@ -46,10 +52,28 @@ p{
 }
 .navbar-brand
 {
-  width:80%;
+  /* width:40%; */
   padding-top: 0.5rem;
 }
+#basic-nav-dropdown
+{
+  background-color:#2e3241;
+  border: #2e3241;
+  color:white;
+}
 
+#basic-nav-dropdown-light
+{
+  background-color:aliceblue;
+  border: #2e3241;
+  color:#2e3241;
+}
+.table-light
+{
+  background-color:aliceblue;
+  border: #2e3241;
+  color:#2e3241;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -65,6 +89,7 @@ code {
 .table,tr,th,td
 {
   border:none;
+  text-align: center;
 }
 
 .mt-3

@@ -28,7 +28,6 @@ function Data() {
    
   return (
     <div className='data-record'>
-       {cnt}
         <Table>
                 <thead>
                     <tr>
@@ -46,7 +45,7 @@ function Data() {
         {
             Prod.map((item,ind)=>(
                 <tr>
-                <td>{ind}</td>
+                <td>{ind+1}</td>
                 <td>{item.name}</td>
                 <td>&#8377;{item.last}</td>
                 <td>&#8377;{Math.round(item.buy,2)}{' / '}&#8377;{Math.round(item.sell,2)}</td>
