@@ -15,24 +15,18 @@ function App() {
     
     if(toggle)
     {
-      // console.log(e.target.value);
-      var element = document.body;
-      element.classList.toggle("light-mode");
+        var element=document.body;
 
-      var element=document.getElementById('table');
-      element.classList.toggle("table-light");
+        element.classList.toggle('light-mode');
 
-
+         element=document.getElementsByClassName('table');
+        element.classList.toggle('table-light');
 
     }
     else
     {
-      console.log(e.target.value);
-      // var element = document.light-mode;
-      // element.classList.toggle("body");
-
-      // var element=document.getElementById('table-light');
-      // element.classList.toggle("table");
+      element=document.getElementsByClassName('table-light');
+      element.classList.toggle('table');
     }
     
     settoggle(!toggle);
