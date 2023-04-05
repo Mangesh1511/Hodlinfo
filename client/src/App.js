@@ -20,7 +20,7 @@ function App() {
               className="d-inline-block align-top"
             />
           </Navbar.Brand>
-          <Nav.Link href="https://hodlinfo.com/connect/telegram">Connect Telegram</Nav.Link>
+          <Nav.Link href="https://hodlinfo.com/connect/telegram"><img src='./images/tele.png'/>Connect Telegram</Nav.Link>
 
 
       </Navbar>

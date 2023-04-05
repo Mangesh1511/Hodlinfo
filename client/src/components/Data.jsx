@@ -3,25 +3,32 @@ import { ListGroup, ListGroupItem,Row,Col,Table, Container } from 'react-bootstr
 import { useEffect,useState} from 'react'
 import axios from 'axios'
 function Data() {
+    
         const [Prod,setProd]=useState([]);
+        const [cnt,setCnt]=useState(0);
         const feedData=async()=>{
             const data=await axios.get("/getdata");
             console.log('Response received is: ',data.data);
             setProd(data.data);
             console.log('Updated data is: ',data.data);
         };
-    
+      
+        
         useEffect(()=>{
             if(Prod.length===0 && Prod.length!=undefined)feedData();
-        })
-       
-        // console.log('Length of the data is: ',data.data);
+           
+            
+              setTimeout(function(){
+                window.location.reload();
+             }, 60000);
+        },[])
 
         
         console.log(Prod);
    
   return (
     <div className='data-record'>
+       {cnt}
         <Table>
                 <thead>
                     <tr>
